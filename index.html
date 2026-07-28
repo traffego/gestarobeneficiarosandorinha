@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial - Sistema de Gestão de Beneficiários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+    <div class="container animate-fade-in">
+        <!-- Top Actions -->
+        <div class="top-actions">
+            <button class="btn btn-ghost" onclick="window.print()" title="Imprimir" aria-label="Imprimir">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8" rx="1"></rect>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <div class="profile-header">
+                <img src="./avatar.png" alt="Jônathas Quintanilha (Garré)" class="profile-avatar">
+                <div class="profile-info">
+                    <div class="profile-name">Jônathas Quintanilha (Garré)</div>
+                    <div class="profile-specialties">Desenvolvedor de Sistemas | IA, RAG & LLMs | Automações | +15 anos de experiência</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Document Hero -->
+        <div class="doc-hero">
+            <span class="badge">Proposta Comercial</span>
+            <h1>Sistema de Gestão de Beneficiários</h1>
+            <p class="lead">Solução integrada para controle de projetos, núcleos, ponto eletrônico de instrutores, presenças de alunos e relatórios para prestação de contas da Andorinha.</p>
+            
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label">Documento</span>
+                    <span class="meta-val">Proposta Técnica</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Versão</span>
+                    <span class="meta-val">1.0</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Data</span>
+                    <span class="meta-val">Julho de 2026</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Validade</span>
+                    <span class="meta-val">30 dias</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. Módulos do Sistema -->
+        <section id="escopo">
+            <h2><span>01.</span> Módulos do Sistema</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 5%">#</th>
+                            <th style="width: 25%">Módulo</th>
+                            <th>Funcionalidades Principais</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td style="font-weight: 600;">Cadastro de Objetos</td>
+                            <td>Diferenciação de Projetos (iniciativas contínuas de longo prazo) e Eventos (oficinas/ações pontuais), com campos para vigência, instrumento jurídico (Marco Regulatório MROSC) e órgão concedente.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td style="font-weight: 600;">Principais Entidades</td>
+                            <td>Cadastro e mapeamento de Núcleos (locais físicos), Atividades, Turmas com calendário de múltiplos horários estruturados, Beneficiários (alunos) e Instrutores.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td style="font-weight: 600;">Cadastro Público</td>
+                            <td>Links públicos de auto-inscrição de beneficiários parametrizados por núcleo. Possui validação geográfica de localidade (endereço) com fila de aprovação manual em caso de divergência.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td style="font-weight: 600;">Ponto dos Instrutores</td>
+                            <td>Registro de check-in e check-out dos instrutores baseado em QR Code físico afixado no núcleo (validação principal) e geolocalização complementar. Painel de status e inconsistências para coordenação.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td style="font-weight: 600;">Presença de Alunos</td>
+                            <td>Lançamento simplificado de frequência dos beneficiários integrado diretamente à mesma sessão de ponto do instrutor, com suporte a justificativas de faltas.</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td style="font-weight: 600;">Comprovação de Aula</td>
+                            <td>Upload de 1 a 2 fotos comprobatórias do serviço prestado na mesma sessão de ponto/presença, gerando um registro unificado diário.</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td style="font-weight: 600;">Controle de Material</td>
+                            <td>Catálogo de itens vinculado aos Objetos. Movimentações de entrada registrando nota fiscal, fotos físicas do material recebido, fornecedor e exportação de relatórios para prestação de contas.</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td style="font-weight: 600;">Relatórios Concedentes</td>
+                            <td>Painel gerador de relatórios nativos e customizáveis no formato padrão do Ministério do Esporte (Tabelas de Núcleos, RH e Beneficiários), com exportações em Excel e PDF.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 2. Fluxo e Rastreabilidade -->
+        <section id="operacoes">
+            <h2><span>02.</span> Fluxo Operacional do Sistema</h2>
+            <p>O fluxo de dados foi desenhado para maximizar a transparência e simplificar a operação de campo:</p>
+            
+            <div class="step-list">
+                <div class="step-item">
+                    <span class="step-num">1</span>
+                    <div class="step-content">
+                        <h4>Parametrização & Cadastro</h4>
+                        <p>O administrador cadastra os Objetos (Projetos/Eventos), vigências, núcleos e as turmas com múltiplos horários.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">2</span>
+                    <div class="step-content">
+                        <h4>Captação & Validação</h4>
+                        <p>Alunos se cadastram pelo link único do Núcleo. O sistema valida a localidade do endereço e envia para moderação em caso de dúvida.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">3</span>
+                    <div class="step-content">
+                        <h4>Rotina do Instrutor</h4>
+                        <p>No núcleo, o instrutor faz check-in via QR Code fixo, chama a presença dos alunos e anexa fotos da aula com 1 clique.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">4</span>
+                    <div class="step-content">
+                        <h4>Prestação de Contas</h4>
+                        <p>A coordenação avalia as movimentações de estoque (com fotos/NF) e exporta a planilha padronizada para o Ministério do Esporte.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Stack de Tecnologia -->
+        <section id="tecnologias">
+            <h2><span>03.</span> Stack de Tecnologia</h2>
+            <div class="tech-pills">
+                <span class="tech-badge">React (Frontend Web & Mobile App)</span>
+                <span class="tech-badge">Node.js (Backend REST)</span>
+                <span class="tech-badge">NestJS (Framework Corporativo)</span>
+                <span class="tech-badge">PostgreSQL (Banco de Dados Relacional)</span>
+                <span class="tech-badge">Puppeteer (Relatórios PDF Nativos)</span>
+                <span class="tech-badge">ExcelJS (Geração de Planilhas Padronizadas)</span>
+            </div>
+        </section>
+
+        <!-- 4. Etapas de Desenvolvimento -->
+        <section id="cronograma">
+            <h2><span>04.</span> Cronograma de Desenvolvimento (Regime Acelerado)</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Etapa</th>
+                            <th>Escopo Técnico Principal</th>
+                            <th style="width: 20%">Prazo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight: 600;">1. Setup & DB Schema</td>
+                            <td>Arquitetura de dados (Objetos, Turmas, Horários, Ponto e Estoque) e infraestrutura base.</td>
+                            <td>Dias 28 e 29/07</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">2. Cadastros de Entidades</td>
+                            <td>Telas administrativas de Objetos, Núcleos, Instrutores, Atividades e Turmas com horários múltiplos.</td>
+                            <td>Dias 30 e 31/07</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">3. Cadastro & Ponto Mobile</td>
+                            <td>Portal de cadastro público com geovalidação de localidade, folha de ponto por QR Code e lista de presença integrada.</td>
+                            <td>Dias 01 e 02/08</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">4. Estoque & Relatórios</td>
+                            <td>Módulo de entrada de materiais com notas/fotos e exportação Excel/PDF no padrão do Ministério do Esporte.</td>
+                            <td>Dias 03 e 04/08</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">5. Homologação & Entrega</td>
+                            <td>Testes de carga de imagens, auditoria de segurança, deploy na VPS final e liberação do código.</td>
+                            <td>Dia 05/08</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-muted" style="font-size: 0.8rem; text-align: right; margin-top: 0.5rem;">Vigência do Desenvolvimento: <strong>64 horas de engenharia dedicada</strong> (Prazo Limite: 05/08/2026).</p>
+        </section>
+
+        <!-- 5. Investimento -->
+        <section id="investimento">
+            <h2><span>05.</span> Investimento</h2>
+            
+            <div class="calc-box">
+                <div class="calc-inputs">
+                    <div class="calc-title">Escopo Incluso</div>
+                    
+                    <div class="calc-option" style="cursor: default;">
+                        <input type="checkbox" checked disabled>
+                        <span>Desenvolvimento do Sistema (Base + Entidades)<br><span class="text-muted" style="font-size: 0.7rem;">Módulos de Objetos, Núcleos, Atividades, Turmas e Instrutores.</span></span>
+                    </div>
+
+                    <div class="calc-option" style="cursor: default;">
+                        <input type="checkbox" checked disabled>
+                        <span>Portal Público de Beneficiários<br><span class="text-muted" style="font-size: 0.7rem;">Inscrições vinculadas a núcleos com geovalidação de localidade.</span></span>
+                    </div>
+
+                    <div class="calc-option" style="cursor: default;">
+                        <input type="checkbox" checked disabled>
+                        <span>Rotina de Ponto, Presença & Comprovação<br><span class="text-muted" style="font-size: 0.7rem;">QR Code fixo, check-in do instrutor, faltas dos alunos e upload de fotos da aula.</span></span>
+                    </div>
+
+                    <div class="calc-option" style="cursor: default;">
+                        <input type="checkbox" checked disabled>
+                        <span>Controle de Estoque & Materiais<br><span class="text-muted" style="font-size: 0.7rem;">Entradas de suprimentos vinculadas ao Objeto com notas fiscais e fotos.</span></span>
+                    </div>
+
+                    <div class="calc-option" style="cursor: default;">
+                        <input type="checkbox" checked disabled>
+                        <span>Relatório Ministério do Esporte<br><span class="text-muted" style="font-size: 0.7rem;">Geração automática e configurável de relatórios Excel e PDF conforme convênio.</span></span>
+                    </div>
+                </div>
+
+                <div class="calc-result">
+                    <div>
+                        <span class="badge" style="background-color: var(--muted); border-color: var(--border);">Orçamento Fechado</span>
+                        
+                        <div class="price-display" style="border-bottom: 1px solid var(--border); padding-bottom: 0.75rem; margin-bottom: 0.75rem;">
+                            <span class="price-label" style="color: #4ade80; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em;">PAGAMENTO À VISTA COM DESCONTO</span>
+                            <div class="price-num" style="color: #4ade80; font-size: 2.2rem; font-weight: 800;">R$ 7.300</div>
+                        </div>
+
+                        <div class="price-display" style="margin-top: 0;">
+                            <span class="price-label">Opção Parcelada (Sinal + Entrega)</span>
+                            <div class="price-num" style="font-size: 1.5rem; opacity: 0.85;">R$ 7.680</div>
+                        </div>
+                        
+                        <div class="calc-rows" style="border-top: 1px dashed var(--border); margin-top: 0.75rem;">
+                            <div class="calc-row">
+                                <span>Desenvolvimento Integrado (64h):</span>
+                                <span>R$ 7.680</span>
+                            </div>
+                            <div class="calc-row">
+                                <span>50% Sinal (Imediato):</span>
+                                <span style="color: var(--foreground)">R$ 3.840</span>
+                            </div>
+                            <div class="calc-row">
+                                <span>50% na Entrega (05/08):</span>
+                                <span style="color: var(--foreground)">R$ 3.840</span>
+                            </div>
+                            <div class="calc-row" style="border-top: 1px dashed var(--border); padding-top: 0.5rem; margin-top: 0.5rem; display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem;">
+                                <span class="text-muted" style="font-size: 0.7rem; font-weight: 500; text-transform: uppercase;">Forma de Pagamento:</span>
+                                <span style="font-size: 0.8rem; font-weight: 600;">À vista R$ 7.300 ou 50% Sinal / 50% Entrega</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <button class="btn btn-primary" style="width: 100%; margin-bottom: 0.5rem;" id="submit-proposal-btn">APROVAR PROPOSTA</button>
+                        <div class="calc-footer">
+                            * VPS de livre contratação. Hospedagem e domínios por conta da contratante.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Condições Gerais -->
+        <section id="condicoes">
+            <h2><span>06.</span> Condições Gerais</h2>
+            <div class="cond-list">
+                <div class="cond-item">
+                    <h4>Forma de Pagamento</h4>
+                    <p>Faturamento estruturado com 50% de sinal no início do desenvolvimento e 50% na entrega em homologação (05/08), ou pagamento integral à vista com desconto especial de R$ 7.300.</p>
+                </div>
+                <div class="cond-item">
+                    <h4>Garantia Total</h4>
+                    <p>Atendimento de garantia por 90 dias após entrega para correção de bugs operacionais e ajustes técnicos vinculados ao escopo acordado.</p>
+                </div>
+                <div class="cond-item">
+                    <h4>Transferência de Código</h4>
+                    <p>Cessão integral do código-fonte e credenciais de deploy na VPS da Andorinha.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <h3>Iniciar Projeto</h3>
+            <p>Clique abaixo para oficializar a contratação ou tirar dúvidas.</p>
+            <div class="footer-actions">
+                <button class="btn btn-primary" id="footer-accept-btn">APROVAR PROPOSTA</button>
+                <button class="btn btn-outline" onclick="window.print()">Salvar PDF</button>
+            </div>
+            <div class="credits">
+                // 2026 Andorinha Tech.
+            </div>
+        </footer>
+    </div>
+
+    <!-- Mobile Floating Dock -->
+    <div class="mobile-dock aggressive-shadow" id="mobile-dock">
+        <a href="#escopo" class="dock-btn" title="Módulos">Mód</a>
+        <a href="#operacoes" class="dock-btn" title="Fluxos">Fluxo</a>
+        <a href="#tecnologias" class="dock-btn" title="Tecnologia">Tech</a>
+        <a href="#cronograma" class="dock-btn" title="Etapas">Etapas</a>
+        <a href="#investimento" class="dock-btn" title="Orçamento">Orçam</a>
+        <a href="#condicoes" class="dock-btn" title="Garantias">Garant</a>
+    </div>
+
+    <!-- JS Logic -->
+    <script>
+        // Actions
+        const submitBtn = document.getElementById('submit-proposal-btn');
+        const acceptBtn = document.getElementById('footer-accept-btn');
+
+        function sendWhatsapp() {
+            const message = `Olá, Jônathas. Nós aprovamos a proposta do Sistema de Gestão de Beneficiários para a Andorinha Empreendimentos. Quais são os próximos passos?`;
+            window.open(`https://wa.me/5521982188560?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        submitBtn.addEventListener('click', sendWhatsapp);
+        acceptBtn.addEventListener('click', sendWhatsapp);
+
+        // Mobile Dock Scrollspy Highlight & Aggressive Shadow Removal
+        const sections = document.querySelectorAll('section');
+        const dockBtns = document.querySelectorAll('.mobile-dock .dock-btn');
+        const mobileDock = document.getElementById('mobile-dock');
+
+        function removeAggressiveShadow() {
+            if (mobileDock) {
+                mobileDock.classList.remove('aggressive-shadow');
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 15) {
+                removeAggressiveShadow();
+            }
+        });
+
+        dockBtns.forEach(btn => {
+            btn.addEventListener('click', removeAggressiveShadow);
+        });
+
+        if ('IntersectionObserver' in window) {
+            const spyObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const activeId = entry.target.getAttribute('id');
+                        dockBtns.forEach(btn => {
+                            btn.classList.remove('active');
+                            if (btn.getAttribute('href') === `#${activeId}`) {
+                                btn.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '-20% 0px -60% 0px' // spy in the upper middle of the screen
+            });
+
+            sections.forEach(sec => spyObserver.observe(sec));
+        }
+    </script>
+</body>
+</html>
